@@ -1,0 +1,336 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Screen = Instance.new("ScreenGui")
+local Frame1 = Instance.new("ImageLabel")
+local Frame2 = Instance.new("ImageLabel")
+local Uncuffable = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local InvisibleTool = Instance.new("TextButton")
+local TextButton_Roundify_12px_2 = Instance.new("ImageLabel")
+local GlassShattering = Instance.new("TextButton")
+local TextButton_Roundify_12px_3 = Instance.new("ImageLabel")
+local SlurpingNoise = Instance.new("TextButton")
+local TextButton_Roundify_12px_4 = Instance.new("ImageLabel")
+local GunMods = Instance.new("TextButton")
+local TextButton_Roundify_12px_5 = Instance.new("ImageLabel")
+local InfiniteYield = Instance.new("TextButton")
+local TextButton_Roundify_12px_6 = Instance.new("ImageLabel")
+local credit = Instance.new("TextLabel")
+local info = Instance.new("TextLabel")
+
+--Properties:
+
+Screen.Name = "Screen"
+Screen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Screen.ResetOnSpawn = false
+
+Frame1.Name = "Frame1"
+Frame1.Parent = Screen
+Frame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame1.BackgroundTransparency = 1.000
+Frame1.Position = UDim2.new(0.32488817, 0, 0.303549588, 0)
+Frame1.Size = UDim2.new(0, 470, 0, 320)
+Frame1.Image = "rbxassetid://3570695787"
+Frame1.ImageColor3 = Color3.fromRGB(47, 47, 47)
+Frame1.ScaleType = Enum.ScaleType.Slice
+Frame1.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame1.SliceScale = 0.120
+Frame1.Active = true
+Frame1.Draggable = true
+
+Frame2.Name = "Frame2"
+Frame2.Parent = Frame1
+Frame2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame2.BackgroundTransparency = 1.000
+Frame2.Position = UDim2.new(0.038297873, 0, 0.065624997, 0)
+Frame2.Size = UDim2.new(0, 436, 0, 280)
+Frame2.Image = "rbxassetid://3570695787"
+Frame2.ImageColor3 = Color3.fromRGB(67, 67, 67)
+Frame2.ScaleType = Enum.ScaleType.Slice
+Frame2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame2.SliceScale = 0.120
+
+
+Uncuffable.Name = "Un-cuffable"
+Uncuffable.Parent = Frame2
+Uncuffable.BackgroundColor3 = Color3.fromRGB(122, 227, 120)
+Uncuffable.BackgroundTransparency = 1.000
+Uncuffable.BorderSizePixel = 0
+Uncuffable.Position = UDim2.new(0.0467980281, 0, 0.0581818186, 0)
+Uncuffable.Size = UDim2.new(0, 130, 0, 62)
+Uncuffable.ZIndex = 2
+Uncuffable.AutoButtonColor = false
+Uncuffable.Font = Enum.Font.GothamBlack
+Uncuffable.Text = "Un-cuffable"
+Uncuffable.TextColor3 = Color3.fromRGB(67, 67, 67)
+Uncuffable.TextScaled = true
+Uncuffable.TextSize = 14.000
+Uncuffable.TextWrapped = true
+Uncuffable.MouseButton1Down:connect(function()
+	_G.conn = game:GetService("RunService").RenderStepped:Connect(function()
+		game:GetService("Workspace")game.Players.LocalPlayer.Character.Detained:Destroy()
+	end)
+end)
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = Uncuffable
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(67, 255, 199)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(47, 47, 47)
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+InvisibleTool.Name = "Invisible Tool"
+InvisibleTool.Parent = Frame2
+InvisibleTool.BackgroundColor3 = Color3.fromRGB(0, 161, 26)
+InvisibleTool.BackgroundTransparency = 1.000
+InvisibleTool.BorderSizePixel = 0
+InvisibleTool.Position = UDim2.new(0.633004904, 0, 0.0581818186, 0)
+InvisibleTool.Size = UDim2.new(0, 130, 0, 62)
+InvisibleTool.ZIndex = 2
+InvisibleTool.Font = Enum.Font.GothamBlack
+InvisibleTool.Text = "Invisible Tool"
+InvisibleTool.TextColor3 = Color3.fromRGB(67, 67, 67)
+InvisibleTool.TextScaled = true
+InvisibleTool.TextSize = 14.000
+InvisibleTool.TextWrapped = true
+InvisibleTool.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SupermanGUI/invis/main/invisv2",true))();
+end)
+
+TextButton_Roundify_12px_2.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_2.Parent = InvisibleTool
+TextButton_Roundify_12px_2.Active = true
+TextButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_2.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_2.Selectable = true
+TextButton_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(47, 47, 47)
+TextButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_2.SliceScale = 0.120
+
+GlassShattering.Name = "Glass Shattering"
+GlassShattering.Parent = Frame2
+GlassShattering.BackgroundColor3 = Color3.fromRGB(0, 161, 26)
+GlassShattering.BackgroundTransparency = 1.000
+GlassShattering.BorderSizePixel = 0
+GlassShattering.Position = UDim2.new(0.633004904, 0, 0.443636358, 0)
+GlassShattering.Size = UDim2.new(0, 130, 0, 62)
+GlassShattering.ZIndex = 2
+GlassShattering.Font = Enum.Font.GothamBlack
+GlassShattering.Text = "Glass Shattering"
+GlassShattering.TextColor3 = Color3.fromRGB(67, 67, 67)
+GlassShattering.TextScaled = true
+GlassShattering.TextSize = 14.000
+GlassShattering.TextWrapped = true
+GlassShattering.MouseButton1Down:connect(function()
+	local scriptEnv = game:GetService("Players").LocalPlayer.PlayerScripts:FindFirstChild("effects.client")
+	shared.Func=nil
+
+
+	for i,v in next, getgc() do
+		if getinfo(v).name == 'play_audio' and getfenv(v).script == scriptEnv then
+			shared.Func= v
+		end
+	end
+
+	for _, c in next, game.Players:GetPlayers() do
+		local newTable = {
+			["Position"] = c.Character.PrimaryPart,
+			["SoundId"] = "rbxassetid://626807593",
+			["Replicate"] = true,
+			["Volume"] = 1,
+			["Effects"] = true
+		}
+		shared.Func(newTable)
+	end
+end)
+
+TextButton_Roundify_12px_3.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_3.Parent = GlassShattering
+TextButton_Roundify_12px_3.Active = true
+TextButton_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_3.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_3.Selectable = true
+TextButton_Roundify_12px_3.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_3.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_3.ImageColor3 = Color3.fromRGB(47, 47, 47)
+TextButton_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_3.SliceScale = 0.120
+
+SlurpingNoise.Name = "Slurping Noise"
+SlurpingNoise.Parent = Frame2
+SlurpingNoise.BackgroundColor3 = Color3.fromRGB(0, 161, 26)
+SlurpingNoise.BackgroundTransparency = 1.000
+SlurpingNoise.BorderSizePixel = 0
+SlurpingNoise.Position = UDim2.new(0.0467979908, 0, 0.443636358, 0)
+SlurpingNoise.Size = UDim2.new(0, 130, 0, 62)
+SlurpingNoise.ZIndex = 2
+SlurpingNoise.Font = Enum.Font.GothamBlack
+SlurpingNoise.Text = "Slurping Noise"
+SlurpingNoise.TextColor3 = Color3.fromRGB(67, 67, 67)
+SlurpingNoise.TextScaled = true
+SlurpingNoise.TextSize = 14.000
+SlurpingNoise.TextWrapped = true
+SlurpingNoise.MouseButton1Down:connect(function()
+	local scriptEnv = game:GetService("Players").LocalPlayer.PlayerScripts:FindFirstChild("effects.client")
+	shared.Func=nil
+
+
+	for i,v in next, getgc() do
+		if getinfo(v).name == 'play_audio' and getfenv(v).script == scriptEnv then
+			shared.Func= v
+		end
+	end
+
+	for _, c in next, game.Players:GetPlayers() do
+		local newTable = {
+			["Position"] = c.Character.PrimaryPart,
+			["SoundId"] = "rbxassetid://10722059",
+			["Replicate"] = true,
+			["Volume"] = 1,
+			["Effects"] = true
+		}
+		shared.Func(newTable)
+	end
+end)
+
+TextButton_Roundify_12px_4.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_4.Parent = SlurpingNoise
+TextButton_Roundify_12px_4.Active = true
+TextButton_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_4.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_4.Selectable = true
+TextButton_Roundify_12px_4.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_4.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_4.ImageColor3 = Color3.fromRGB(47, 47, 47)
+TextButton_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_4.SliceScale = 0.120
+
+GunMods.Name = "Gun Mods"
+GunMods.Parent = Frame2
+GunMods.BackgroundColor3 = Color3.fromRGB(0, 161, 26)
+GunMods.BackgroundTransparency = 1.000
+GunMods.BorderSizePixel = 0
+GunMods.Position = UDim2.new(0.692118108, 0, 0.74181819, 0)
+GunMods.Size = UDim2.new(0, 82, 0, 50)
+GunMods.ZIndex = 2
+GunMods.Font = Enum.Font.GothamBlack
+GunMods.Text = "Gun Mods"
+GunMods.TextColor3 = Color3.fromRGB(67, 67, 67)
+GunMods.TextScaled = true
+GunMods.TextSize = 14.000
+GunMods.TextWrapped = true
+GunMods.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SupermanGUI/GunMod/main/gmod",true))();
+end)
+
+TextButton_Roundify_12px_5.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_5.Parent = GunMods
+TextButton_Roundify_12px_5.Active = true
+TextButton_Roundify_12px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_5.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_5.Selectable = true
+TextButton_Roundify_12px_5.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_5.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_5.ImageColor3 = Color3.fromRGB(47, 47, 47)
+TextButton_Roundify_12px_5.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_5.SliceScale = 0.120
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = Frame2
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(0, 161, 26)
+InfiniteYield.BackgroundTransparency = 1.000
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.105911195, 0, 0.74181819, 0)
+InfiniteYield.Size = UDim2.new(0, 82, 0, 50)
+InfiniteYield.ZIndex = 2
+InfiniteYield.Font = Enum.Font.GothamBlack
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(67, 67, 67)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextWrapped = true
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+TextButton_Roundify_12px_6.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_6.Parent = InfiniteYield
+TextButton_Roundify_12px_6.Active = true
+TextButton_Roundify_12px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_6.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_6.Selectable = true
+TextButton_Roundify_12px_6.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_6.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_6.ImageColor3 = Color3.fromRGB(47, 47, 47)
+TextButton_Roundify_12px_6.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_6.SliceScale = 0.120
+
+credit.Name = "credit"
+credit.Parent = Frame2
+credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credit.BackgroundTransparency = 1.000
+credit.BorderColor3 = Color3.fromRGB(27, 42, 53)
+credit.Position = UDim2.new(0.364678919, 0, 0.857922018, 0)
+credit.Size = UDim2.new(0, 116, 0, 39)
+credit.Font = Enum.Font.GothamBold
+credit.Text = "cav#3907"
+credit.TextColor3 = Color3.fromRGB(47, 47, 47)
+credit.TextSize = 14.000
+
+info.Name = "info"
+info.Parent = Frame1
+info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+info.BackgroundTransparency = 1.000
+info.Position = UDim2.new(0.341284961, 0, 0.714715958, 0)
+info.Size = UDim2.new(0, 150, 0, 60)
+info.Font = Enum.Font.GothamBlack
+info.Text = "\" - \" to toggle gui"
+info.TextColor3 = Color3.fromRGB(47, 47, 47)
+info.TextSize = 14.000
+
+-- Scripts:
+
+local function ZQXUSJ_fake_script() -- Frame1.LocalScript 
+	local script = Instance.new('LocalScript', Frame1)
+
+	player = game.Players.LocalPlayer
+	
+	player:GetMouse().KeyDown:Connect(function(key)
+		if key == "-" and script.Parent.Visible == false then
+			script.Parent.Visible = true
+		else
+			if key == "-" and script.Parent.Visible == true then
+				script.Parent.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(ZQXUSJ_fake_script)()
